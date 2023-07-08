@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    cursor: pointer;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text-content{
+   padding: 120px 80px;
+   line-height: 40px;
+}
+
+.text-content h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.text-content span{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background: #cc2a0a;
+   align-items: center;
+   justify-content: center;
+}
+
+.holder{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    background: #cc2a0a;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+
+h3{
+    font-weight: 400;
+}
+
+i{
+    color: #fff;
+    font-size: 27px;
+}
+
+P{
+    margin-left: 20px;
+}
+
+
+h4{
+    padding-top: 40px;
+}
+
+input{
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #000;
+    font-size: inherit;
+    padding-left: 20px;
+}
+
+button{
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    font-size: inherit;
+    font-weight: 700;
+    color: #fff;
+    background: #0B0B10;
+    border: none;
+    outline: none;
+}
+
+.container .sidebar{
+    background: url(/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: inherit;
+    
+}
+
+.success{
+    border: 2px solid rgb(35, 243, 35);
+}
+
+.error{
+    border: 2px solid red;
+}
+
+
+
+@media only screen and (max-width: 988px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        overflow: scroll;
+    }
+
+    .container .sidebar{
+        height: 50vh;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .container .text-content{
+        line-height: 40px;
+        width: 100%;
+    }
+
+    
+
+    .container .text-content input{
+        width: 100%;
+    }
+
+    .container .text-content button{
+        width: 100%;
+    }
+}
+
+@media scren and (max-width: 500px){
+    .container .text-content{
+        padding: 120px 0;
+    }
+
+    .container .text-content input{
+        width: 100%;
+        height: 60px;
+    }
+
+    .container .text-content button{
+        width: 100%;
+    }
+
+    .container .text-content .holder{
+        width: 100%;
+    }
+
+    .container .text-content h2{
+        font-size: 20px;
+        width: 100%;
+        margin-left: -20px;
+    }
+}
+
